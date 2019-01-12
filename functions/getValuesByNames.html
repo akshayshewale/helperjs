@@ -1,0 +1,109 @@
+<div class="card row">
+    <div class="col s12 m12 l12 color1">
+        <h5>array getValuesByNames()</h5>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <b>Description</b>
+        <code class="col s12 m12 l12">
+            This function returns an array consisting of values of names as given in the input array<br>
+            *Unlike getValuesByIds,which retrieves data regardless of the ids value,The getValuesByNames wont retrieve data from a name if it is empty
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="row">
+        <code class="col s12 m12 l12">
+            <b>Parameters</b>
+            <table class="reponsive">
+                <thead>
+                    <th>SrNo.</th>
+                    <th>name</th>
+                    <th>Description</th>
+                    <th>Datatype</th>
+                    <th>is Optional</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>arrayOfNames</td>
+                        <td>it is the array of names from which you want to retrieve values from</td>
+                        <td>array</td>
+                        <td>no</td>
+                    </tr>
+                </tbody>
+            </table>
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Code</b>
+        </div>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:JS</b>
+            <div class="divider"></div>
+            let arrayOfNames = ["nameGetValuesByNames","phoneGetValuesByNames","emailGetValuesByNames","divExampleGetValuesByNames"];<br>
+            document.getElementById("outputGetValuesByNames").innerHTML = getValuesByNames(arrayOfNames);
+        </code>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Sample</b>
+        </div>
+        <form class="col s12 m12 l12 card">
+            <div class="row">
+                <div class="col s12 m6 l6 input-field">
+                    <input type="text" id="nameGetValuesByNames1" name="nameGetValuesByNames">
+                    <label for="nameGetValuesByNames1">Name 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="tel" id="phoneGetValuesByNames1" name="phoneGetValuesByNames" maxlength="10">
+                    <label for="phoneGetValuesByNames1">Phone 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="email" id="emailGetValuesByNames1" name="emailGetValuesByNames">
+                    <label for="emailGetValuesByNames1">Email 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <div id="divExampleGetValuesByNames1" name="divExampleGetValuesByNames">Helper1.js</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6 input-field">
+                    <input type="text" id="nameGetValuesByNames2" name="nameGetValuesByNames">
+                    <label for="nameGetValuesByNames2">Name 2</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="tel" id="phoneGetValuesByNames2" name="phoneGetValuesByNames" maxlength="10">
+                    <label for="phoneGetValuesByNames2">Phone 2</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="email" id="emailGetValuesByNames2" name="emailGetValuesByNames">
+                    <label for="emailGetValuesByNames2">Email 2</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <div id="divExampleGetValuesByNames2" name="divExampleGetValuesByNames">Helper2.js</div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 center input-field">
+                <button type="button" class="btn color1" onclick="sendGetValuesByNames();">Submit</button>
+            </div>
+            <br>
+        </form>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Output</b>
+        </div>
+        <code id="outputGetValuesByNames" class="breaker">
+        </code>
+        <br>
+        <br>
+    </div>
+</div>

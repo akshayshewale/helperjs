@@ -1,0 +1,94 @@
+<div class="card row">
+    <div class="col s12 m12 l12 color1">
+        <h5>void createDynamicElement()</h5>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <b>Description</b>
+        <code class="col s12 m12 l12">
+            this function adds a dynamic element into a div whose id is provided on calling function<br>
+            it replaces given string(default "##") with numbers,and replicates the first child template div of the given id.
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="row">
+        <code class="col s12 m12 l12">
+            <b>Parameters</b>
+            <table class="reponsive">
+                <thead>
+                    <th>SrNo.</th>
+                    <th>name</th>
+                    <th>Description</th>
+                    <th>Datatype</th>
+                    <th>is Optional</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>parentId</td>
+                        <td>The id in which you want the dynamic element to be created</td>
+                        <td>String</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>replaceStringPattern</td>
+                        <td>The string pattern to be replaces from the template div(Default "##")</td>
+                        <td>String</td>
+                        <td>yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Code</b>
+        </div>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:HTML</b>
+            <div class="divider"></div>
+            &lt;div id="makeDynam"&gt;<br>
+            &lt;div&gt;<br>
+            &lt;div class="col s12 m6 l6 input-field"&gt;<br>
+            &lt;input type="text" id="nameCreateDynamicElement##" name="nameCreateDynamicElement"&gt;<br>
+            &lt;label for="nameCreateDynamicElement##">Name ##&lt;/label&gt;<br>
+            &lt;!--You can add any replacestring anywhere in the template--&gt;
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+        </code>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:JS</b>
+            <div class="divider"></div>
+            //needed to be called once if template is not hidden or if you want to keep x number of items pregenerated
+            createDynamicElement("makeDynam");
+        </code>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Sample</b>
+        </div>
+        <form class="col s12 m12 l12 card">
+            <div class="row" id="makeDynam">
+                <div>
+                    <div class="col s12 m6 l6 input-field">
+                        <input type="text" id="nameCreateDynamicElement##" name="nameCreateDynamicElement">
+                        <label for="nameCreateDynamicElement##">Name ##</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 center input-field">
+                <button type="button" class="btn-floating color1" onclick="sendCreateDynamicElement();"><i class="material-icons">add</i></button>
+            </div>
+            <br>
+        </form>
+    </div>
+</div>

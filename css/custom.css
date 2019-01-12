@@ -1,0 +1,52 @@
+header,
+main,
+footer {
+    padding-left: 300px;
+}
+
+body {
+    margin-top: -65px;
+}
+
+@media only screen and (max-width : 992px) {
+
+    body {
+        margin-top: 0px;
+    }
+
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+.bgGrad {
+    background-image: linear-gradient(to bottom, rgba(226, 226, 226, 1) 0%, rgba(254, 254, 254, 1) 100%);
+}
+
+.color1 {
+    background: #5b7add !important;
+    color: white;
+    text-decoration-color: #5b7add;
+}
+
+.color2 {
+    background: white;
+    color: #5b7add;
+    text-decoration-color: white;
+}
+
+.font1 {
+    color: white;
+    text-decoration-color: #5b7add;
+}
+
+.font2 {
+    color: #5b7add;
+    text-decoration-color: white;
+}
+
+.breaker {
+    word-break: break-all;
+}

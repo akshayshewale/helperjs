@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper.js Docs</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/material.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/material.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <include file="navBar.html" to="sidenavDiv" id="sidenavDiv"></include>
+    <main>
+        <include file="about.html" to="aboutDiv" id="aboutDiv"></include>
+        <include file="gettingStarted.html" to="gettingStartedDiv" id="gettingStartedDiv"></include>
+        <div class="row">
+            <div class="col s12 m12 l12 color1 center">
+                <h4>Documentation of Funtions</h4>
+            </div>
+        </div>
+        <div class="col s12 l12 m12 container input-field">
+            <input type="search" id="searcherAllDocs">
+            <label for="searcherAllDocs">Search Functions Here</label>
+        </div>
+        <div class="functionDocsDiv container" id="docsDiv">
+            <include file="functions/include.html" to="includeDocsDiv" id="includeDocsDiv"></include>
+            <include file="functions/validator.html" to="validatorDocsDiv" id="validatorDocsDiv"></include>
+            <include file="functions/getValuesByIds.html" to="getValuesByIdsDocsDiv" id="getValuesByIdsDocsDiv"></include>
+            <include file="functions/getValuesByNames.html" to="getValuesByNamesDocsDiv" id="getValuesByNamesDocsDiv"></include>
+            <include file="functions/checkRequiredIds.html" to="checkRequiredIdsDocsDiv" id="checkRequiredIdsDocsDiv"></include>
+            <include file="functions/checkRequiredNames.html" to="checkRequiredNamesDocsDiv" id="checkRequiredNamesDocsDiv"></include>
+            <include file="functions/getQueryString.html" to="getQueryStringDiv" id="getQueryStringDiv"></include>
+            <include file="functions/createDynamicElement.html" to="createDynamicElementDocsDiv" id="createDynamicElementDocsDiv"></include>
+            <include file="functions/getDataToIds.html" to="getDataToIdsDocsDiv" id="getDataToIdsDocsDiv"></include>
+<!--            <include file="functions/getDataToNames.html" to="getDataToNamesDocsDiv" id="getDataToNamesDocsDiv"></include>-->
+            <include file="functions/filterTable.html" to="filterTableDocsDiv" id="filterTableDocsDiv"></include>
+            <include file="functions/filterElements.html" to="filterElementsDocsDiv" id="filterElementsDocsDiv"></include>
+            <include file="functions/local.html" to="localDocsDiv" id="localDocsDiv"></include>
+            <include file="functions/session.html" to="sessionDocsDiv" id="sessionDocsDiv"></include>
+            <include file="functions/replaceInString.html" to="replaceInStringDocsDiv" id="replaceInStringDocsDiv"></include>
+        </div>
+    </main>
+    <footer class="page-footer color1">
+        <include file="footer.html" to="footerDiv" id="footerDiv"></include>
+    </footer>
+</body>
+
+</html>

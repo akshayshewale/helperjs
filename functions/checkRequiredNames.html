@@ -1,0 +1,109 @@
+<div class="card row">
+    <div class="col s12 m12 l12 color1">
+        <h5>boolean checkRequiredNames()</h5>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <b>Description</b>
+        <code class="col s12 m12 l12">
+            This function returns an boolean which is true if at least one value of the name is filled<br>
+            *Unlike checkRequiredIds,which checks each id and return false if even one is empty,The checkRequiredNames check if ATLEAST one name is filled else returns false
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="row">
+        <code class="col s12 m12 l12">
+            <b>Parameters</b>
+            <table class="reponsive">
+                <thead>
+                    <th>SrNo.</th>
+                    <th>name</th>
+                    <th>Description</th>
+                    <th>Datatype</th>
+                    <th>is Optional</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>arrayOfNames</td>
+                        <td>it is the array of names from which you want to retrieve values from</td>
+                        <td>array</td>
+                        <td>no</td>
+                    </tr>
+                </tbody>
+            </table>
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Code</b>
+        </div>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:JS</b>
+            <div class="divider"></div>
+            let arrayOfNames = ["nameCheckRequiredNames","phoneCheckRequiredNames","emailCheckRequiredNames","divExampleCheckRequiredNames"];<br>
+            document.getElementById("outputCheckRequiredNames").innerHTML = checkRequiredNames(arrayOfNames);
+        </code>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Sample</b>
+        </div>
+        <form class="col s12 m12 l12 card">
+            <div class="row">
+                <div class="col s12 m6 l6 input-field">
+                    <input type="text" id="nameCheckRequiredNames1" name="nameCheckRequiredNames">
+                    <label for="nameCheckRequiredNames1">Name 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="tel" id="phoneCheckRequiredNames1" name="phoneCheckRequiredNames" maxlength="10">
+                    <label for="phoneCheckRequiredNames1">Phone 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="email" id="emailCheckRequiredNames1" name="emailCheckRequiredNames">
+                    <label for="emailCheckRequiredNames1">Email 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <div id="divExampleCheckRequiredNames1" name="divExampleCheckRequiredNames">Helper1.js</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6 input-field">
+                    <input type="text" id="nameCheckRequiredNames2" name="nameCheckRequiredNames">
+                    <label for="nameCheckRequiredNames2">Name 2</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="tel" id="phoneCheckRequiredNames2" name="phoneCheckRequiredNames" maxlength="10">
+                    <label for="phoneCheckRequiredNames2">Phone 2</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="email" id="emailCheckRequiredNames2" name="emailCheckRequiredNames">
+                    <label for="emailCheckRequiredNames2">Email 2</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <div id="divExampleCheckRequiredNames2" name="divExampleCheckRequiredNames">Helper2.js</div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 center input-field">
+                <button type="button" class="btn color1" onclick="sendCheckRequiredNames();">Submit</button>
+            </div>
+            <br>
+        </form>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Output</b>
+        </div>
+        <code id="outputCheckRequiredNames" class="breaker">
+        </code>
+        <br>
+        <br>
+    </div>
+</div>

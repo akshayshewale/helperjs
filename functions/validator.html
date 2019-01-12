@@ -1,0 +1,99 @@
+<div class="card row">
+    <div class="col s12 m12 l12 color1">
+        <h5>boolean validator()</h5>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <b>Description</b>
+        <code class="col s12 m12 l12">
+            This function validates and return true if the passed value is of the given type
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="row">
+        <code class="col s12 m12 l12">
+            <b>Parameters</b>
+            <table class="reponsive">
+                <thead>
+                    <th>SrNo.</th>
+                    <th>name</th>
+                    <th>Description</th>
+                    <th>Datatype</th>
+                    <th>is Optional</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>type</td>
+                        <td class="breaker">it is the type to be used for validation.some Types are isNotNull,phone,email,name,number,checkbox or radio</td>
+                        <td>String</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>value</td>
+                        <td class="breaker">it is the value to be validated(provide name in case of radio or checkbox else provide value)</td>
+                        <td>String,int</td>
+                        <td>no</td>
+                    </tr>
+                </tbody>
+            </table>
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Code</b>
+        </div>
+        <code class="col s12 m12 l12 card">
+            <b>Language:JS</b>
+            <div class="divider"></div>
+            let type = document.getElementById("typeValidator").value;<br>
+            let name = document.getElementById("nameValidator").value;<br>
+            let isTrue = validator(type, name);<br>
+            if (isTrue) {<br>
+            document.getElementById("outputValidator").innerHTML = name + " is a " + type;<br>
+            } else {<br>
+            document.getElementById("outputValidator").innerHTML = name + " is NOT a " + type;<br>
+            }<br>
+        </code>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Sample</b>
+        </div>
+        <form class="col s12 m12 l12 card">
+            <div class="col s12 m6 l6">
+                <select id="typeValidator" class="browser-default">
+                    <option value="name">name</option>
+                    <option value="phone">phone</option>
+                    <option value="email">email</option>
+                    <option value="isNotNull">isNotNull</option>
+                </select>
+            </div>
+            <div class="col s12 m6 l6">
+                <input type="text" id="nameValidator">
+                <label for="nameValidator">Value</label>
+            </div>
+            <div class="col s12 m12 l12 center input-field">
+                <button type="button" class="btn color1" onclick="sendValidator();">Submit</button>
+            </div>
+            <br>
+        </form>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Output</b>
+        </div>
+        <code id="outputValidator" class="breaker">
+        </code>
+        <br>
+        <br>
+    </div>
+</div>

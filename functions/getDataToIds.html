@@ -1,0 +1,112 @@
+<div class="card row">
+    <div class="col s12 m12 l12 color1">
+        <h5>void getDataToIds()</h5>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <b>Description</b>
+        <code class="col s12 m12 l12">
+            requests the query string and fills the data to the ids provided
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="row">
+        <code class="col s12 m12 l12">
+            <b>Parameters</b>
+            <table class="reponsive">
+                <thead>
+                    <th>SrNo.</th>
+                    <th>name</th>
+                    <th>Description</th>
+                    <th>Datatype</th>
+                    <th>is Optional</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>queryString</td>
+                        <td>qs you want to request for the data</td>
+                        <td>String</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>arrayOfIds</td>
+                        <td>Ids array in which you want to store the data recieved</td>
+                        <td>array</td>
+                        <td>no</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>replaceStringPattern</td>
+                        <td>The string pattern that is to be used to seperate data recieved(Default "##")</td>
+                        <td>String</td>
+                        <td>yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </code>
+    </div>
+    <div class="col s12 m12 l12">
+        <br>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Code</b>
+        </div>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:HTML</b>
+            <div class="divider"></div>
+            &lt;div id="makeDynam"&gt;<br>
+            &lt;div&gt;<br>
+            &lt;div class="col s12 m6 l6 input-field"&gt;<br>
+            &lt;input type="text" id="namegetDataToIds##" name="namegetDataToIds"&gt;<br>
+            &lt;label for="namegetDataToIds##">Name ##&lt;/label&gt;<br>
+            &lt;!--You can add any replacestring anywhere in the template--&gt;
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+        </code>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:Server(PHP)</b>
+            <div class="divider"></div>
+            echo "demo human##1234567891##2018-12-15##v-1-beta";
+        </code>
+        <code class="col s12 m12 l12 card breaker">
+            <b>Language:JS</b>
+            <div class="divider"></div>
+            getDataToIds("query.php?getDataToIds=true", ["namegetDataToIds1", "phonegetDataToIds1", "helperDate", "helperVersion"]);
+        </code>
+    </div>
+    <div class="container">
+        <div class="col s12 m12 l12">
+            <b>Sample</b>
+        </div>
+        <form class="col s12 m12 l12 card">
+            <div class="row">
+                <div class="col s12 m6 l6 input-field">
+                    <input type="text" id="namegetDataToIds1" name="namegetDataToIds">
+                    <label for="namegetDataToIds##">Name 1</label>
+                </div>
+                <div class="col s12 m6 l6 input-field">
+                    <input type="text" id="phonegetDataToIds1" name="phonegetDataToIds">
+                    <label for="phonegetDataToIds1">Phone 1</label>
+                </div>
+                <div class="col s12 m6 l6">
+                    Helper Date<div id="helperDate"></div>
+                </div>
+                <div class="col s12 m6 l6">
+                    Helper version<div id="helperVersion"></div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 center input-field">
+                <button type="button" class="btn color1" onclick="sendgetDataToIds();">get Data</button>
+            </div>
+            <br>
+        </form>
+    </div>
+</div>
