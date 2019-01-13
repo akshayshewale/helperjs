@@ -1,8 +1,7 @@
-$(document).ready(function () {
-    $(".button-collapse").sideNav();
-    $('.collapsible').collapsible();
-    $('.dropdown-button').dropdown('open');
+window.addEventListener("includeend", function (e) {
     filterElements("docsDiv", "searcherAllDocs");
+    filterTable("tableFilterTable", "searcherFilterTable");
+    $(".button-collapse").sideNav();
 });
 
 function sendValidator() {
@@ -54,10 +53,6 @@ function sendgetDataToIds() {
     getDataToIds("query.php?getDataToIds=true", ["namegetDataToIds1", "phonegetDataToIds1", "helperDate", "helperVersion"]);
 }
 
-function getFilterTable() {
-    filterTable("tableFilterTable", "searcherFilterTable");
-}
-
 function sendLocal() {
     let vals = getValuesByIds(["nameLocal", "valueLocal"]);
     if (validator("isNotNull", vals[1])) {
@@ -78,10 +73,10 @@ function sendSession() {
     }
 }
 
-if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-        navigator
-            .serviceWorker
-            .register("sw.js")
-    })
-}
+//if ("serviceWorker" in navigator) {
+//    window.addEventListener("load", () => {
+//        navigator
+//            .serviceWorker
+//            .register("sw.js")
+//    })
+//}

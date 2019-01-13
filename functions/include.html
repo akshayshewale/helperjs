@@ -43,7 +43,7 @@
     </div>
     <div class="container">
         <div class="col s12 m12 l12">
-            <b>Example</b>
+            <b>Sample</b>
         </div>
         <code class="col s12 m12 l12 card">
             <b>Language:HTML</b>
@@ -51,6 +51,17 @@
             &lt;include file="file.html" to="storeId" id="storeId"&gt;&lt;include&gt;
             <br>
             &lt;!--this includes the file.html contents to the given storeId in this case itself--&gt;
+            &lt;!--for a better sample view source code of this page--&gt;
+        </code>
+    </div>
+    <div class="container">
+        <b>Events</b>
+        <code class="col s12 m12 l12">
+            Two Events are fired when running the include() function <br>
+            *<b>includestart</b> :: this event is fired when the including process has started<br>
+            *<b>includednew</b> :: this event is fired every time a new file is finished including to know the id of the div where the file is use (event.id)<br>
+            *<b>includeend </b>:: this event is fired when the including process has ended<br>
+            (use the end event to initialize any code meant for files in the include tag<br>{as window.onload runs when the main file is loaded and it does not care for include to finish})
         </code>
     </div>
 </div>
