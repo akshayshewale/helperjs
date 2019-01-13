@@ -20,7 +20,6 @@ const installStart = function (req) {
     )
 }
 
-
 const fetchStart = function (res) {
     res.respondWith(
         //check cache for files
@@ -33,7 +32,6 @@ const fetchStart = function (res) {
                             //if not data.php or query.php get files from server and store in cache
                             let resCopy = response.clone().url.toString();
                             if (!(resCopy.indexOf("index.html") > -1 || resCopy.indexOf("query.php") > -1)) {
-                                console.log(resCopy);
                                 cache.put(res.request, response.clone());
                             }
                             //return the files
